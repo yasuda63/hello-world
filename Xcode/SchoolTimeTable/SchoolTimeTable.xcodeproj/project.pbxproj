@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0280512A0A46D300AE3522 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0280502A0A46D300AE3522 /* LessonTableViewCell.swift */; };
+		3F0EB8862A14C46200A2ECF2 /* LessonRegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0EB8852A14C46200A2ECF2 /* LessonRegisterViewController.storyboard */; };
+		3F0EB8882A14C4CD00A2ECF2 /* LessonRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EB8872A14C4CD00A2ECF2 /* LessonRegisterViewController.swift */; };
+		3F1F6CFE2A010F1F009F19FD /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1F6CFD2A010F1F009F19FD /* ViewController.storyboard */; };
+		3F4F19C02A0B8EFF00CC7A31 /* LessonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F19BF2A0B8EFF00CC7A31 /* LessonListViewModel.swift */; };
+		3F7E75422A554B8C00184E93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E75412A554B8C00184E93 /* APIClient.swift */; };
+		3F7E75452A5551D400184E93 /* HolidayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E75442A5551D400184E93 /* HolidayModel.swift */; };
+		3F7E75472A5552E900184E93 /* HolidaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E75462A5552E900184E93 /* HolidaysModel.swift */; };
+		3F7E75492A555D6C00184E93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F7E75482A555D6C00184E93 /* GoogleService-Info.plist */; };
+		3F7E754C2A555F0800184E93 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7E754B2A555F0800184E93 /* FirebaseCrashlytics */; };
+		3F9247A32A13820300ED05FB /* LessonEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9247A22A13820300ED05FB /* LessonEmptyTableViewCell.swift */; };
+		3FAE3D9529F7CEB100B6DE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9429F7CEB100B6DE2C /* AppDelegate.swift */; };
+		3FAE3D9729F7CEB100B6DE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9629F7CEB100B6DE2C /* SceneDelegate.swift */; };
+		3FAE3D9929F7CEB100B6DE2C /* LessonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9829F7CEB100B6DE2C /* LessonDetailViewController.swift */; };
+		3FAE3D9C29F7CEB100B6DE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9A29F7CEB100B6DE2C /* Main.storyboard */; };
+		3FAE3D9E29F7CEB200B6DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9D29F7CEB200B6DE2C /* Assets.xcassets */; };
+		3FAE3DA129F7CEB200B6DE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE3D9F29F7CEB200B6DE2C /* LaunchScreen.storyboard */; };
+		3FCC22C42A3066F3006927F2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3FCC22C32A3066F3006927F2 /* Realm */; };
+		3FCC22C62A3066F3006927F2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FCC22C52A3066F3006927F2 /* RealmSwift */; };
+		3FCC22C92A3069FB006927F2 /* RealmClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC22C82A3069FB006927F2 /* RealmClient.swift */; };
+		3FCC22CC2A306B54006927F2 /* LessonDetailDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC22CB2A306B54006927F2 /* LessonDetailDataObject.swift */; };
+		3FCC22CE2A306D78006927F2 /* LessonDetailImageDetaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC22CD2A306D78006927F2 /* LessonDetailImageDetaObject.swift */; };
+		3FCC22D02A3071E9006927F2 /* LessonListDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC22CF2A3071E9006927F2 /* LessonListDataObject.swift */; };
+		3FD793682A274207008D33A7 /* TimeTableDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD793672A274207008D33A7 /* TimeTableDataStore.swift */; };
+		3FFB16F729F9208D00948DEF /* LessonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB16F629F9208D00948DEF /* LessonDetailViewModel.swift */; };
+		3FFB16F929F924BF00948DEF /* LessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB16F829F924BF00948DEF /* LessonListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F0280502A0A46D300AE3522 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		3F0EB8852A14C46200A2ECF2 /* LessonRegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LessonRegisterViewController.storyboard; sourceTree = "<group>"; };
+		3F0EB8872A14C4CD00A2ECF2 /* LessonRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRegisterViewController.swift; sourceTree = "<group>"; };
+		3F1F6CFD2A010F1F009F19FD /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		3F4F19BF2A0B8EFF00CC7A31 /* LessonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListViewModel.swift; sourceTree = "<group>"; };
+		3F7E75412A554B8C00184E93 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3F7E75442A5551D400184E93 /* HolidayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayModel.swift; sourceTree = "<group>"; };
+		3F7E75462A5552E900184E93 /* HolidaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysModel.swift; sourceTree = "<group>"; };
+		3F7E75482A555D6C00184E93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F9247A22A13820300ED05FB /* LessonEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		3FAE3D9129F7CEB100B6DE2C /* SchoolTimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE3D9429F7CEB100B6DE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FAE3D9629F7CEB100B6DE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FAE3D9829F7CEB100B6DE2C /* LessonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailViewController.swift; sourceTree = "<group>"; };
+		3FAE3D9B29F7CEB100B6DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FAE3D9D29F7CEB200B6DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FAE3DA029F7CEB200B6DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FAE3DA229F7CEB200B6DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCC22C82A3069FB006927F2 /* RealmClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmClient.swift; sourceTree = "<group>"; };
+		3FCC22CB2A306B54006927F2 /* LessonDetailDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailDataObject.swift; sourceTree = "<group>"; };
+		3FCC22CD2A306D78006927F2 /* LessonDetailImageDetaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailImageDetaObject.swift; sourceTree = "<group>"; };
+		3FCC22CF2A3071E9006927F2 /* LessonListDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListDataObject.swift; sourceTree = "<group>"; };
+		3FD793672A274207008D33A7 /* TimeTableDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableDataStore.swift; sourceTree = "<group>"; };
+		3FFB16F629F9208D00948DEF /* LessonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailViewModel.swift; sourceTree = "<group>"; };
+		3FFB16F829F924BF00948DEF /* LessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FAE3D8E29F7CEB100B6DE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7E754C2A555F0800184E93 /* FirebaseCrashlytics in Frameworks */,
+				3FCC22C62A3066F3006927F2 /* RealmSwift in Frameworks */,
+				3FCC22C42A3066F3006927F2 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0EB8842A14C40100A2ECF2 /* LessonRegister */ = {
+			isa = PBXGroup;
+			children = (
+				3F0EB8852A14C46200A2ECF2 /* LessonRegisterViewController.storyboard */,
+				3F0EB8872A14C4CD00A2ECF2 /* LessonRegisterViewController.swift */,
+			);
+			path = LessonRegister;
+			sourceTree = "<group>";
+		};
+		3F7E75402A554B5B00184E93 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E75432A55519000184E93 /* Response */,
+				3F7E75412A554B8C00184E93 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3F7E75432A55519000184E93 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E75442A5551D400184E93 /* HolidayModel.swift */,
+				3F7E75462A5552E900184E93 /* HolidaysModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		3F9247A12A1381C100ED05FB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3F0280502A0A46D300AE3522 /* LessonTableViewCell.swift */,
+				3F9247A22A13820300ED05FB /* LessonEmptyTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3FAE3D8829F7CEB100B6DE2C = {
+			isa = PBXGroup;
+			children = (
+				3FAE3D9329F7CEB100B6DE2C /* SchoolTimeTable */,
+				3FAE3D9229F7CEB100B6DE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FAE3D9229F7CEB100B6DE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE3D9129F7CEB100B6DE2C /* SchoolTimeTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FAE3D9329F7CEB100B6DE2C /* SchoolTimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E75402A554B5B00184E93 /* API */,
+				3FCC22C72A3069C4006927F2 /* Realm */,
+				3FD793662A2741AC008D33A7 /* DataStore */,
+				3F0EB8842A14C40100A2ECF2 /* LessonRegister */,
+				3F9247A12A1381C100ED05FB /* Cell */,
+				3FFB16F529F9205400948DEF /* ViewModel */,
+				3FAE3D9429F7CEB100B6DE2C /* AppDelegate.swift */,
+				3FAE3D9629F7CEB100B6DE2C /* SceneDelegate.swift */,
+				3FAE3D9829F7CEB100B6DE2C /* LessonDetailViewController.swift */,
+				3FAE3D9A29F7CEB100B6DE2C /* Main.storyboard */,
+				3FAE3D9D29F7CEB200B6DE2C /* Assets.xcassets */,
+				3FAE3D9F29F7CEB200B6DE2C /* LaunchScreen.storyboard */,
+				3FAE3DA229F7CEB200B6DE2C /* Info.plist */,
+				3FFB16F829F924BF00948DEF /* LessonListViewController.swift */,
+				3F1F6CFD2A010F1F009F19FD /* ViewController.storyboard */,
+				3F7E75482A555D6C00184E93 /* GoogleService-Info.plist */,
+			);
+			path = SchoolTimeTable;
+			sourceTree = "<group>";
+		};
+		3FCC22C72A3069C4006927F2 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC22CA2A306AF8006927F2 /* DataObject */,
+				3FCC22C82A3069FB006927F2 /* RealmClient.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3FCC22CA2A306AF8006927F2 /* DataObject */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC22CB2A306B54006927F2 /* LessonDetailDataObject.swift */,
+				3FCC22CD2A306D78006927F2 /* LessonDetailImageDetaObject.swift */,
+				3FCC22CF2A3071E9006927F2 /* LessonListDataObject.swift */,
+			);
+			path = DataObject;
+			sourceTree = "<group>";
+		};
+		3FD793662A2741AC008D33A7 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				3FD793672A274207008D33A7 /* TimeTableDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		3FFB16F529F9205400948DEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FFB16F629F9208D00948DEF /* LessonDetailViewModel.swift */,
+				3F4F19BF2A0B8EFF00CC7A31 /* LessonListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FAE3D9029F7CEB100B6DE2C /* SchoolTimeTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAE3DA529F7CEB200B6DE2C /* Build configuration list for PBXNativeTarget "SchoolTimeTable" */;
+			buildPhases = (
+				3FAE3D8D29F7CEB100B6DE2C /* Sources */,
+				3FAE3D8E29F7CEB100B6DE2C /* Frameworks */,
+				3FAE3D8F29F7CEB100B6DE2C /* Resources */,
+				3F7E754D2A555FF800184E93 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolTimeTable;
+			packageProductDependencies = (
+				3FCC22C32A3066F3006927F2 /* Realm */,
+				3FCC22C52A3066F3006927F2 /* RealmSwift */,
+				3F7E754B2A555F0800184E93 /* FirebaseCrashlytics */,
+			);
+			productName = SchoolTimeTable;
+			productReference = 3FAE3D9129F7CEB100B6DE2C /* SchoolTimeTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FAE3D8929F7CEB100B6DE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3FAE3D9029F7CEB100B6DE2C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3FAE3D8C29F7CEB100B6DE2C /* Build configuration list for PBXProject "SchoolTimeTable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FAE3D8829F7CEB100B6DE2C;
+			packageReferences = (
+				3FCC22C22A3066F3006927F2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				3F7E754A2A555F0800184E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3FAE3D9229F7CEB100B6DE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FAE3D9029F7CEB100B6DE2C /* SchoolTimeTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FAE3D8F29F7CEB100B6DE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0EB8862A14C46200A2ECF2 /* LessonRegisterViewController.storyboard in Resources */,
+				3FAE3DA129F7CEB200B6DE2C /* LaunchScreen.storyboard in Resources */,
+				3FAE3D9E29F7CEB200B6DE2C /* Assets.xcassets in Resources */,
+				3FAE3D9C29F7CEB100B6DE2C /* Main.storyboard in Resources */,
+				3F1F6CFE2A010F1F009F19FD /* ViewController.storyboard in Resources */,
+				3F7E75492A555D6C00184E93 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F7E754D2A555FF800184E93 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FAE3D8D29F7CEB100B6DE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE3D9929F7CEB100B6DE2C /* LessonDetailViewController.swift in Sources */,
+				3FFB16F729F9208D00948DEF /* LessonDetailViewModel.swift in Sources */,
+				3F4F19C02A0B8EFF00CC7A31 /* LessonListViewModel.swift in Sources */,
+				3FD793682A274207008D33A7 /* TimeTableDataStore.swift in Sources */,
+				3F7E75472A5552E900184E93 /* HolidaysModel.swift in Sources */,
+				3FAE3D9529F7CEB100B6DE2C /* AppDelegate.swift in Sources */,
+				3FAE3D9729F7CEB100B6DE2C /* SceneDelegate.swift in Sources */,
+				3FCC22CE2A306D78006927F2 /* LessonDetailImageDetaObject.swift in Sources */,
+				3FFB16F929F924BF00948DEF /* LessonListViewController.swift in Sources */,
+				3F7E75452A5551D400184E93 /* HolidayModel.swift in Sources */,
+				3F7E75422A554B8C00184E93 /* APIClient.swift in Sources */,
+				3FCC22D02A3071E9006927F2 /* LessonListDataObject.swift in Sources */,
+				3F0280512A0A46D300AE3522 /* LessonTableViewCell.swift in Sources */,
+				3F0EB8882A14C4CD00A2ECF2 /* LessonRegisterViewController.swift in Sources */,
+				3FCC22C92A3069FB006927F2 /* RealmClient.swift in Sources */,
+				3F9247A32A13820300ED05FB /* LessonEmptyTableViewCell.swift in Sources */,
+				3FCC22CC2A306B54006927F2 /* LessonDetailDataObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FAE3D9A29F7CEB100B6DE2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE3D9B29F7CEB100B6DE2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FAE3D9F29F7CEB200B6DE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE3DA029F7CEB200B6DE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FAE3DA329F7CEB200B6DE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FAE3DA429F7CEB200B6DE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FAE3DA629F7CEB200B6DE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolTimeTable/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "授業にまつわる写真撮影に利用します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "授業にまつわる写真を取得するために利用します";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SchoolTimeTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FAE3DA729F7CEB200B6DE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolTimeTable/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "授業にまつわる写真撮影に利用します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "授業にまつわる写真を取得するために利用します";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SchoolTimeTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FAE3D8C29F7CEB100B6DE2C /* Build configuration list for PBXProject "SchoolTimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE3DA329F7CEB200B6DE2C /* Debug */,
+				3FAE3DA429F7CEB200B6DE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAE3DA529F7CEB200B6DE2C /* Build configuration list for PBXNativeTarget "SchoolTimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE3DA629F7CEB200B6DE2C /* Debug */,
+				3FAE3DA729F7CEB200B6DE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F7E754A2A555F0800184E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		3FCC22C22A3066F3006927F2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.33.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F7E754B2A555F0800184E93 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F7E754A2A555F0800184E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3FCC22C32A3066F3006927F2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FCC22C22A3066F3006927F2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3FCC22C52A3066F3006927F2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FCC22C22A3066F3006927F2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FAE3D8929F7CEB100B6DE2C /* Project object */;
+}
